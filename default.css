@@ -1,0 +1,309 @@
+/* Dokument CSS */
+
+body {
+	background-image: url(./img/background-texture.svg);
+	background-color: #111;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font: 14px Arial;
+	user-select: none;
+	/* Ustawia obrazek tła i kolor tła oraz marginesy, odstępy i wyrównanie tekstu */
+}
+
+a {
+	color: #067e08;
+	text-decoration: none;
+	/* Ustawia kolor i brak dekoracji dla linków */
+}
+
+a:hover {
+	color: #FFF;
+	border-bottom: 1px dotted #FFF;
+	/* Zmienia kolor i dodaje kropkowaną dolną linię przy najechaniu na link */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-variant: small-caps;
+	margin: 0.5em;
+	font-weight: bold;
+	margin-left: 0;
+	/* Ustawia styl czcionki, marginesy i pogrubienie dla nagłówków */
+}
+
+h1 {
+	font-size: 1.3em
+		/* Ustawia rozmiar czcionki dla h1 */
+}
+
+h2 {
+	font-size: 1.8em
+		/* Ustawia rozmiar czcionki dla h2 */
+}
+
+h3 {
+	font-size: 1.3em
+		/* Ustawia rozmiar czcionki dla h3 */
+}
+
+h4 {
+	font-size: 1.9em;
+	text-align: center;
+	color: red;
+	/* Zmienia kolor tekstu na czerwony oraz ustawia rozmiar czcionki i wyrównanie dla h4 */
+}
+
+h5 {
+	font-size: 1.4em
+		/* Ustawia rozmiar czcionki dla h5 */
+}
+
+h6 {
+	font-size: 1.3em
+		/* Ustawia rozmiar czcionki dla h6 */
+}
+
+ul {
+	list-style-type: square;
+	/* Ustawia styl listy na kwadraty */
+}
+
+#wizytowka {
+	border-top: 0px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	color: #000000;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-top: 0;
+	/* Ustawia stylizację wizytówki z marginesami i kolorami */
+}
+
+#MenuG {
+	width: 900px;
+	margin: auto;
+	padding: 10px 0 10px 0;
+	/* Ustawia szerokość i marginesy menu głównego */
+}
+
+#naglowek {
+	font-variant: small-caps;
+	font-size: 36px;
+	position: relative;
+	margin: auto;
+	/* Ustawia styl nagłówka z czcionką i marginesami */
+}
+
+#menubar {
+	font: 12px Georgia, serif;
+	background-image: linear-gradient(to bottom, rgb(51, 75, 52), rgb(1, 28, 1));
+	font-variant: small-caps;
+	font-size: 18px;
+	border-top: 3px double #999;
+	border-bottom: 3px double #999;
+	padding: 0 30px 0 30px;
+	display: flex;
+	margin-bottom: 16px;
+	/* Ustawia styl paska menu z gradientem, obramowaniem, czcionkami i marginesami */
+}
+
+#menubar a {
+	display: inline-block;
+	flex-grow: 1;
+	flex-basis: 0;
+	color: #f2ea00;
+	text-decoration: none;
+	border-bottom: 0;
+	margin: 4px;
+	/* Ustawia styl linków w pasku menu */
+}
+
+#menubar a.active {
+	color: #CCC;
+	/* Ustawia kolor dla aktywnych linków w pasku menu */
+}
+
+#menubar a:hover {
+	border-radius: 16px;
+	box-shadow: 0 0 7px black;
+	color: #CCC;
+	/* Dodaje efekt cienia i zmienia kolor linków przy najechaniu */
+}
+
+main {
+	text-align: left;
+	text-indent: 2em;
+	width: 690px;
+	float: left;
+	margin: auto;
+	position: relative;
+	/* Ustawia styl głównej treści z wyrównaniem i marginesami */
+}
+
+p {
+	line-height: 1.2rem;
+	font-size: 1rem;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	/* Ustawia styl paragrafów z linią odstępów i czcionką */
+}
+
+.dziennik {
+	width: 690px;
+	/* Ustawia szerokość dziennika */
+}
+
+article {
+	border-top: 3px double #999;
+	color: #000000;
+	background-color: #ddd;
+	text-align: justify;
+	float: right;
+	width: 650px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/* Ustawia styl artykułów z obramowaniem, kolorem tła i tekstu oraz marginesami */
+}
+
+article h2 {
+	margin-top: -8px;
+	/* Ustawia margines górny dla h2 w artykułach */
+}
+
+article h5 {
+	margin-top: -16px;
+	letter-spacing: 2px;
+	color: #5c5c5c;
+	/* Ustawia margines górny i rozstawienie liter dla h5 w artykułach */
+}
+
+.ablok_s {
+	border-top: 3px double #999;
+	color: #000000;
+	background-color: #ddd;
+	text-align: center;
+	float: right;
+	width: 650px;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	/* Ustawia styl bocznych bloków z obramowaniem, kolorem tła i tekstu oraz wyśrodkowaniem zawartości */
+}
+
+aside {
+	width: 210px;
+	float: left;
+	text-align: right;
+	/* Ustawia styl bocznej kolumny z szerokością i wyrównaniem tekstu */
+}
+
+aside ul li a:hover {
+	color: #CCC;
+	/* Zmienia kolor linków w bocznej kolumnie przy najechaniu */
+}
+
+.sideitem p,
+.sideitem h3 {
+	color: #111;
+	margin: 10px;
+	line-height: 16px;
+	/* Ustawia styl paragrafów i nagłówków w elementach bocznych */
+}
+
+.sideitem h3 {
+	color: #000000
+		/* Ustawia kolor nagłówków w elementach bocznych */
+}
+
+.sideitem {
+	font-size: 1em;
+	width: 200px;
+	background-color: #e78989df;
+	text-align: left;
+	border-top: 1px dotted #999;
+	border-bottom: 0px;
+	padding-bottom: 8px;
+	/* Ustawia styl elementów bocznych z czcionką, kolorem tła, obramowaniem i marginesami */
+}
+
+#side-nav {
+	text-align: left;
+	width: 200px;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+	/* Ustawia styl nawigacji bocznej z wyrównaniem, szerokością, czcionką i marginesami */
+}
+
+#side-nav a {
+	background-color: transparent;
+	border-bottom: 0;
+	padding: 10px;
+	color: #01a59f;
+	white-space: nowrap;
+	border-top: 1px dotted #999;
+	border-bottom: 1px dotted #999;
+	background-color: #222;
+	/* Ustawia styl linków w nawigacji bocznej */
+}
+
+#side-nav a.aktywna {
+	color: #f7f6f3;
+	/* Ustawia kolor dla aktywnych linków w nawigacji bocznej */
+}
+
+#side-nav a:hover {
+	background-image: linear-gradient(to bottom, rgba(161, 167, 61, 0.75), rgba(20, 20, 19, 0.487));
+	background-color: rgb(54, 63, 15);
+	/* Dodaje efekt gradientu i zmienia kolor tła linków przy najechaniu */
+}
+
+footer {
+	border-top: 3px double #CCC;
+	text-align: center;
+	font-size: 11px;
+	width: 100%;
+	height: 20px;
+	background-color: rgb(231, 208, 133);
+	position: absolute;
+	bottom: -20px;
+	/* Ustawia styl stopki z obramowaniem, wyrównaniem, czcionką i kolorem tła */
+}
+
+.bottomlinks {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: -8px;
+	/* Ustawia styl linków na dole strony */
+}
+
+a[rel^="lyteshow"] {
+	text-decoration: none;
+	/* Ustawia brak dekoracji dla linków z atrybutem rel zaczynającym się od "lyteshow" */
+}
+
+a[rel^="lyteshow"]>img {
+	box-shadow: 0 0 3px 0px black;
+	transition: box-shadow .4s, filter .3s;
+	margin: 8px;
+	text-decoration: none;
+	/* Ustawia efekt cienia, przejście, marginesy i brak dekoracji dla obrazków wewnątrz linków z atrybutem rel zaczynającym się od "lyteshow" */
+}
+
+a[rel^="lyteshow"]:hover>img {
+	box-shadow: 0 0 9px 0px black;
+	filter: none;
+	/* Zwiększa efekt cienia i usuwa filtr przy najechaniu na obrazki wewnątrz linków z atrybutem rel zaczynającym się od "lyteshow" */
+}
